@@ -401,3 +401,40 @@ img {
     letter-spacing: 0.2rem;
     margin-bottom: 1.5rem;
 }
+
+/* Footer ========================= */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5rem 0;
+}
+
+.footer-content ul.list-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-content ul.list-footer li a {
+    margin: 2rem;
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    text-decoration: none;
+}
+
+.footer-content ul.list-footer li:last-child a {
+    background: var(--color-shape-hover);
+    padding: 1.8rem 2rem;
+    border-radius: 0.5rem;
+    transition: all .3s;
+}
+
+.footer-content ul.list-footer li:last-child a:hover {
+    background: var(--color-orange);
+    color: var(--color-white);
+}
