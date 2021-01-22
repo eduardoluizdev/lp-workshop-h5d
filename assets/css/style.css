@@ -1,9 +1,11 @@
+/* Root Settings ========================= */
 :root {
     --color-background: #121214;
     --color-white: #fff;
     --color-yellow: #FFE549;
     --color-orange: #FFBD00;
     --color-green: #54B309;
+    --color-light-green: #8de24b;
     --color-dark-green: #4A8F04;
     --color-gray: #e1e1e6;
     --color-shape: #202024;
@@ -12,6 +14,7 @@
     --color-scrollbar-background: transparent;
 }
 
+/* Geral ========================= */
 * {
     margin: 0;
     padding: 0;
@@ -22,4 +25,74 @@
 html {
     font-size: 62.5%; /* 10px */
     scrollbar-color: var(--color-scrollbar) var(--color-scrollbar-background);
+}
+
+body {
+    background: var(--color-background);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Header ========================= */
+#header {
+    margin-top: 2rem;
+
+    background: url('../img/background-header.png') top right no-repeat;
+    background-size: cover;
+}
+
+#header .events-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .events-logos .logo-workshop {
+    max-width: 200px;
+}
+
+#header .highlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 5rem 0;
+}
+
+#header .highlight .content-highlight h1{
+    font-size: 6rem;
+    color: var(--color-white);
+    letter-spacing: 0.15rem;
+}
+
+#header .highlight .content-highlight h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--color-orange);
+    letter-spacing: 0.15rem;
+    margin-top: 0.5rem;
+}
+
+#header .highlight .content-highlight h2 i {
+    color: var(--color-light-green);
+}
+
+#header .highlight .content-highlight h2 span {
+    font-weight: 700;
+}
+
+#header .highlight .content-highlight h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-orange);
+    margin-top: 0.5rem;
 }
