@@ -8,6 +8,8 @@
     --color-light-green: #8de24b;
     --color-dark-green: #4A8F04;
     --color-gray: #e1e1e6;
+    --color-icons: #41414d;
+    --color-support: #737380;
     --color-shape: #202024;
     --color-shape-hover: #29292e;
     --color-scrollbar: #4d4d57;
@@ -57,10 +59,12 @@ img {
 
 /* Header ========================= */
 #header {
-    margin-top: 2rem;
+    margin: 2rem 0;
 
-    background: url('../img/background-header.png') top right no-repeat;
-    background-size: cover;
+    padding: 5rem 0;
+
+    background: url('../img/background-header.png') top center no-repeat;
+    background-size: contain;
 }
 
 #header .events-logos {
@@ -75,13 +79,15 @@ img {
 
 #header .highlight {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60% 1fr;
 
     padding: 5rem 0;
 }
 
 #header .highlight .content-highlight h1{
-    font-size: 6rem;
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
     color: var(--color-white);
     letter-spacing: 0.15rem;
 }
@@ -110,3 +116,130 @@ img {
 }
 
 /* Form ========================= */
+.capture-form {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--color-shape);
+}
+
+.capture-form form {
+    width: 100%;
+}
+
+.capture-form form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 3.2rem;
+}
+
+.capture-form form ul li.input-group {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    height: 64px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    background: var(--color-background);
+    position: relative;
+}
+
+.capture-form form ul li.input-group:last-child {
+    padding: 0;
+    background: transparent;
+}
+
+.capture-form form ul li.input-group:focus-within{
+    border-color: var(--color-orange);
+}
+
+.capture-form form ul li.input-group:focus-within i {
+    color: var(--color-orange);
+}
+
+.capture-form form ul li.input-group i {
+    color: var(--color-icons);
+    width: 26px;
+    height: 26px;
+    font-size: 2.6rem;
+}
+
+.capture-form form ul li.input-group input {
+    background: inherit;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    width: 100%;
+    height: 100%;
+    transition: border-color .2s;
+    color: var(--color-white);
+    outline: none;
+    padding: 1.2rem 2rem 1.2rem 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-background);
+}
+
+.capture-form form ul li.input-group input::placeholder {
+    color: var(--color-support);
+}
+
+.capture-form form ul li.input-group button {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    width: 100%;
+    height: 58px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: var(--color-shape);
+    background: var(--color-yellow);
+    text-transform:u ppercase;
+    transform-style: preserve-3d;
+    transition: all 175ms linear;
+}
+
+.capture-form form ul li.input-group button::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-orange);
+    border-radius: inherit;
+    transform: translate3d(0,6px,-1px);
+    transition: all .15s linear
+}
+
+.capture-form form ul li.input-group button:focus,
+.capture-form form ul li.input-group button:hover {
+ background: var(--color-orange);
+ transform: translateY(.375em)
+}
+
+.capture-form form ul li.input-group button:hover:before {
+ transform: translateZ(-4px)
+}
+
+.capture-form form ul li.input-group button:active {
+ transform: translateY(-2px)
+}
+
+.capture-form form ul li.input-group button:active:before {
+ transform: translateZ(-1px)
+}
