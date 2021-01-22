@@ -248,7 +248,7 @@ img {
 .cta {
     margin: 5rem 0;
 }
-.cta h2 {
+.cta > h2 {
     font-size: 4rem;
     color: var(--color-gray);
     text-align: center;
@@ -259,6 +259,69 @@ img {
 .cta h2 span {
     color: var(--color-orange);
     text-transform: uppercase;
+}
+/* First CTA ========================= */
+.first.cta .quality-box { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.quality-box-one,
+.quality-box-two,
+.quality-box-three {
+    margin-bottom: 6rem;
+} 
+
+.quality-box-one,
+.quality-box-three {
+    gap: 17.5rem;
+    display: grid;
+    grid-template-columns: 35rem 35rem;    
+}
+
+.quality-box-two {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.quality-box-two .item-quality h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-yellow);    
+}
+
+.first .highlight-text {
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+
+    color: var(--color-white);
+
+    display: block;
+    margin: 0 auto;
+}
+
+.first .highlight-text span {
+    text-transform: uppercase;
+    color: var(--color-yellow);
+    font-weight: 400;
 }
 
 /* Secound CTA ========================= */
