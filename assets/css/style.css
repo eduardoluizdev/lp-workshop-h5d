@@ -21,4 +21,5 @@
 
 html {
     font-size: 62.5%; /* 10px */
+    scrollbar-color: var(--color-scrollbar) var(--color-scrollbar-background);
 }
