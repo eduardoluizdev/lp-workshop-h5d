@@ -1,4 +1,16 @@
-:root {}
+:root {
+    --color-background: #121214;
+    --color-white: #fff;
+    --color-yellow: #FFE549;
+    --color-orange: #FFBD00;
+    --color-green: #54B309;
+    --color-dark-green: #4A8F04;
+    --color-gray: #e1e1e6;
+    --color-shape: #202024;
+    --color-shape-hover: #29292e;
+    --color-scrollbar: #4d4d57;
+    --color-scrollbar-background: transparent;
+}
 
 * {
     margin: 0;
