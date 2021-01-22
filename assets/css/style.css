@@ -243,3 +243,64 @@ img {
 .capture-form form ul li.input-group button:active:before {
  transform: translateZ(-1px)
 }
+
+/* Configs Gerais CTA ========================= */
+.cta {
+    margin: 5rem 0;
+}
+.cta h2 {
+    font-size: 4rem;
+    color: var(--color-gray);
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.25rem;
+}
+
+.cta h2 span {
+    color: var(--color-orange);
+    text-transform: uppercase;
+}
+
+/* Secound CTA ========================= */
+.cards-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 2.4rem;
+    border-radius: 0.5rem;
+    background: var(--color-shape);
+    transition: all .3s;
+}
+
+.card:hover {
+    background: var(--color-orange);
+}
+
+.card:hover h3,
+.card:hover p {
+    color: var(--color-shape);
+}
+
+.card span {
+    font-size: 8rem;
+    font-weight: 900;
+    color: var(--color-shape-hover);
+}
+
+.card h3 {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: .5rem;
+    color: var(--color-orange);
+}
+
+.card p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: var(--color-gray);
+}
