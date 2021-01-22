@@ -59,8 +59,6 @@ img {
 
 /* Header ========================= */
 #header {
-    margin: 2rem 0;
-
     padding: 5rem 0;
 
     background: url('../img/background-header.png') top center no-repeat;
@@ -109,8 +107,9 @@ img {
 }
 
 #header .highlight .content-highlight h3 {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
     color: var(--color-orange);
     margin-top: 0.5rem;
 }
@@ -246,7 +245,7 @@ img {
 
 /* Configs Gerais CTA ========================= */
 .cta {
-    margin: 5rem 0;
+    margin: 8rem 0;
 }
 .cta > h2 {
     font-size: 4rem;
@@ -366,4 +365,39 @@ img {
     font-weight: 400;
     letter-spacing: 0.1rem;
     color: var(--color-gray);
+}
+
+/* Head Trainer ========================= */
+.head-trainer {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.head-trainer .col:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-trainer .col img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.head-trainer .col h2 {
+    font-size: 5rem;
+    color: var(--color-white);
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.6rem;
+}
+
+.head-trainer .col h2 span {
+    color: var(--color-orange);
+}
+
+.head-trainer .col p.head-trainer-description {
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
 }
