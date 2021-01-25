@@ -642,6 +642,12 @@ img {
     text-align: center;
 
     color: var(--color-shape);
+
+    transition: all .3s;
+}
+
+.thank-you-content a.btn-whats:hover {
+    opacity: .8;
 }
 
 .thank-you-content .steps {
@@ -680,6 +686,10 @@ img {
 .thank-you-content .steps li p a {
     color: var(--color-orange);
     text-decoration: none;
+}
+
+.thank-you-content .steps li p a:hover {
+    text-decoration: underline;
 }
 
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
