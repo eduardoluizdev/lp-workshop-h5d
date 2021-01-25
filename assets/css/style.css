@@ -148,7 +148,7 @@ img {
     width: 100%;
     border: 1px solid transparent;
     border-radius: 0.5rem;
-    background: var(--color-background);
+    background: var(--color-gray);
     position: relative;
 }
 
@@ -181,11 +181,11 @@ img {
     width: 100%;
     height: 100%;
     transition: border-color .2s;
-    color: var(--color-white);
+    color: var(--color-background);
     outline: none;
     padding: 1.2rem 2rem 1.2rem 1.5rem;
     border-radius: 0.5rem;
-    background: var(--color-background);
+    background: var(--color-gray);
 }
 
 .capture-form form ul li.input-group input::placeholder {
